@@ -33,7 +33,7 @@ export default function DashboardPage() {
           <S.CardsWrapper>
             <S.TotalCard>
               <Text>Total</Text>
-              <h3>R$ 45,48</h3>
+              <h3 className="text-blue-300">R$ 45,48</h3>
             </S.TotalCard>
             <S.TotalCard>
               <Text>Total</Text>
@@ -41,7 +41,7 @@ export default function DashboardPage() {
             </S.TotalCard>
             <S.TotalCard>
               <Text>Total</Text>
-              <h3>R$ 45,48</h3>
+              <h3 className="text-slate-600">R$ 45,48</h3>
             </S.TotalCard>
           </S.CardsWrapper>
         </S.Informations>

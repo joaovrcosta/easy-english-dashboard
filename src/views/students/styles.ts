@@ -48,78 +48,11 @@ export const FiltersContainer = styled.div`
     }
   }
 `
-
-export const StudentListContainer = styled.section`
-  border: 1px solid ${({ theme }) => theme.colors.gray_100};
-  padding: 1rem;
-  border-radius: 6px;
-
-  /* Resetando estilos padrão da tabela */
-  table {
-    width: 100%;
-    border-collapse: collapse; /* Remove espaços entre células */
-    border-spacing: 0; /* Remove espaçamento entre células */
-
-    thead {
-      tr {
-        th {
-          text-align: start;
-          padding: 0 1rem;
-          height: 48px;
-          color: ${({ theme }) => theme.colors.primary};
-        }
-      }
-    }
-
-    tbody {
-      tr {
-        &:hover {
-          background-color: #f5f6f7;
-          /* transition: 0.3s ease-in-out; */
-        }
-
-        td {
-          border-top: 1px solid ${({ theme }) => theme.colors.gray_100};
-          border-bottom: 1px solid ${({ theme }) => theme.colors.gray_100};
-          padding: 1rem;
-          height: 71px;
-        }
-      }
-    }
-  }
-`
-
 export const ResourcesContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.25rem;
-`
-
-export const ResourceButton = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  height: 36px;
-  width: 36px;
-  border-radius: 6px;
-  cursor: pointer;
-
-  &:hover {
-    border: 1px solid ${({ theme }) => theme.colors.gray_100};
-    background-color: white;
-  }
-`
-
-export const Tag = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem;
-  border-radius: 24px;
-  background-color: ${({ theme }) => theme.colors.green_500};
-  color: ${({ theme }) => theme.colors.white};
 `
 
 export const SeeProfileButton = styled.button<StudentInfoProps>`
@@ -153,4 +86,29 @@ export const SeeProfileButton = styled.button<StudentInfoProps>`
       color: ${theme.colors.white};
     }
   `}
+`
+
+export const ResourceButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.colors.gray_100};
+    background-color: white;
+  }
+`
+export const Tag = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 24px;
+  background-color: ${({ theme }) => theme.colors.green_500};
+  color: ${({ theme }) => theme.colors.white};
 `

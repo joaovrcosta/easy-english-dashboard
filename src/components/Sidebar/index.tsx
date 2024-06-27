@@ -16,7 +16,7 @@ export function Sidebar() {
         <div>
           <S.LogoContainer>
             <h3>
-              Easy<span>english</span>
+              Easy<span>alvim</span>
             </h3>
           </S.LogoContainer>
           <S.ChooseRestaurant>
