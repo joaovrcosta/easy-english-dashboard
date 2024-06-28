@@ -5,13 +5,14 @@ type Column = {
   title: string
 }
 
+type DataItem = {
+  [key: string]: React.ReactNode
+}
+
 type GenericTableProps = {
   columns: Column[]
-  data: { [key: string]: any }[]
-  renderActions?: (
-    item: { [key: string]: any },
-    index: number
-  ) => React.ReactNode
+  data: DataItem[]
+  renderActions?: (item: DataItem, index: number) => React.ReactNode
 }
 
 const GenericTable: React.FC<GenericTableProps> = ({
