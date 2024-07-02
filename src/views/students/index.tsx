@@ -6,6 +6,7 @@ import { FaEye, FaWhatsapp } from 'react-icons/fa'
 import GenericTable from '@/components/Table'
 import OrderDetailsComponent from '@/components/OrderDetails'
 import { useState } from 'react'
+import { GoPlusCircle } from 'react-icons/go'
 
 export default function StudentsPage() {
   const [activeDetailsIndex, setActiveDetailsIndex] = useState(null)
@@ -50,6 +51,9 @@ export default function StudentsPage() {
       <S.ResourceButton>
         <FaWhatsapp size={20} color="#25d366" />
       </S.ResourceButton>
+      <S.PinStudentButton>
+        <GoPlusCircle size={20} />
+      </S.PinStudentButton>
     </S.ResourcesContainer>
   )
 

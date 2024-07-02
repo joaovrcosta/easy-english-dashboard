@@ -7,8 +7,12 @@ import { useState } from 'react'
 import { Button } from '@/components/atoms/Button'
 import { FiPlus } from 'react-icons/fi'
 import { FaEye } from 'react-icons/fa'
+import * as Dialog from '@radix-ui/react-dialog'
+import { StudentsByClassModal } from '@/components/modals/StudentsByClassModal'
 
 export default function ClassesPage() {
+  const [isStudentsModalOpen, setStudentsModalOpen] = useState(false)
+  const [isNewClassModalOpen, setisNewClassModalOpen] = useState(false)
   const [activeDetailsIndex, setActiveDetailsIndex] = useState<number | null>(
     null
   )
@@ -44,9 +48,20 @@ export default function ClassesPage() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'flex-start',
+            cursor: 'pointer',
           }}
         >
-          <FaEye size={24} />
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
         </div>
       ),
     },
@@ -68,7 +83,17 @@ export default function ClassesPage() {
             cursor: 'pointer',
           }}
         >
-          <FaEye size={24} />
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
         </div>
       ),
     },

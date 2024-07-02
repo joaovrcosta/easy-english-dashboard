@@ -11,7 +11,7 @@ export const MenuButton = styled(Button)<MenuButtonProps>`
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-weight: 400;
   gap: 0.5rem;
   background-color: ${({ isActive, theme }) =>

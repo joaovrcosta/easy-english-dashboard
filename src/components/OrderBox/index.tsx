@@ -6,8 +6,9 @@ import { CiClock2 } from 'react-icons/ci'
 import { Text } from '../atoms/Text'
 import { FaRegCalendarPlus } from 'react-icons/fa'
 import { MdOutlineCalendarMonth } from 'react-icons/md'
+import { FaMapPin } from 'react-icons/fa'
 
-export function OrderBox() {
+export function OrderBox({ name }: { name: string }) {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false)
 
   const handleToggleDetails = () => {
@@ -18,12 +19,12 @@ export function OrderBox() {
     <>
       <S.Container>
         <S.OrderHeading>
-          <h3>Cobrança</h3>
+          <h3>{name}</h3>
           <S.TimingInformation>
-            <S.Timing>
+            {/* <S.Timing>
               <MdOutlineCalendarMonth size={18} />
               25/06/2024
-            </S.Timing>
+            </S.Timing> */}
             <S.CloseButton>
               <IoMdClose size={24} />
             </S.CloseButton>
@@ -37,9 +38,10 @@ export function OrderBox() {
           <div>
             <S.Label>Situação</S.Label>
           </div>
-          <div style={{ textAlign: 'right' }}>
+          <div style={{ textAlign: 'right', alignItems: 'center' }}>
             <Text weight="extrabold" color="primary">
-              Em débito
+              Pinned
+              <FaMapPin size={18} />
             </Text>
           </div>
         </S.Cost>

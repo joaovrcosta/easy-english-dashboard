@@ -112,3 +112,19 @@ export const Tag = styled.div`
   background-color: ${({ theme }) => theme.colors.green_500};
   color: ${({ theme }) => theme.colors.white};
 `
+export const PinStudentButton = styled.div`
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  background-color: ${({ theme }) => theme.colors.white};
+
+  svg {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`

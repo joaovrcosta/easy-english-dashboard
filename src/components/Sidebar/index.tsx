@@ -16,7 +16,7 @@ export function Sidebar() {
         <div>
           <S.LogoContainer>
             <h3>
-              Easy<span>alvim</span>
+              Easy<span>Alvim</span>
             </h3>
           </S.LogoContainer>
           <S.ChooseRestaurant>

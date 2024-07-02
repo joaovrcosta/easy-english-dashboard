@@ -118,6 +118,68 @@ export const CardsWrapper = styled.div`
   justify-content: space-around;
   gap: 1.5rem;
   margin-top: 1.5rem;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+  }
+
+  thead {
+    display: flex;
+    flex-direction: column;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
+  }
+
+  thead tr:last-of-type {
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+  }
+
+  thead th {
+    flex: 1; /* Cada th ocupará a mesma quantidade de espaço */
+    padding: 0.5rem 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilo para o tbody se necessário */
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  tbody tr {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    gap: 0.25rem;
+    height: 32rem;
+  }
+
+  tbody td {
+    flex: 1; /* Cada td ocupará a mesma quantidade de espaço */
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background-color: ${({ theme }) => theme.colors.gray_100};
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 `
 
 export const InputContainer = styled.div`

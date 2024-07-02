@@ -3,10 +3,14 @@ import * as S from './styles'
 import { OrderBox } from '@/components/OrderBox'
 import { Text } from '@/components/atoms/Text'
 import { FaMapPin } from 'react-icons/fa'
+import Head from 'next/head'
 
 export default function DashboardPage() {
   return (
     <>
+      <Head>
+        <title>Dashboard | EasyAlvim</title>
+      </Head>
       <S.Container>
         <S.OrdersContainer>
           <S.InputContainer>
@@ -24,25 +28,37 @@ export default function DashboardPage() {
             <S.ButtonStatus rounding="rounded">Cancelados</S.ButtonStatus>
           </S.OrdersStatus>
           <S.Orders>
-            <OrderBox />
-            <OrderBox />
+            <OrderBox name="João Victor" />
+            <OrderBox name="Maria Silva" />
           </S.Orders>
         </S.OrdersContainer>
         <S.Informations>
-          <Heading>Dashboard</Heading>
+          <Heading>Bem vindo! 😉</Heading>
           <S.CardsWrapper>
-            <S.TotalCard>
-              <Text>Total</Text>
-              <h3 className="text-blue-300">R$ 45,48</h3>
-            </S.TotalCard>
-            <S.TotalCard>
-              <Text>Total</Text>
-              <h3>R$ 45,48</h3>
-            </S.TotalCard>
-            <S.TotalCard>
-              <Text>Total</Text>
-              <h3 className="text-slate-600">R$ 45,48</h3>
-            </S.TotalCard>
+            <table>
+              <thead>
+                <tr>
+                  <th>Segunda-feira</th>
+                  <th>Terça-feira</th>
+                  <th>Quarta-feira</th>
+                  <th>Quinta-feira</th>
+                  <th>Sexta-feira</th>
+                  <th>Sabado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                  <td>Sem horários para esse dia</td>
+                </tr>
+              </tbody>
+            </table>
           </S.CardsWrapper>
         </S.Informations>
       </S.Container>
