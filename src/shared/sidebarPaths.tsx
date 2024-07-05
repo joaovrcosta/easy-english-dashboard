@@ -23,9 +23,9 @@ export const routes = [
     icon: <AiFillSchedule />,
     title: 'Horários/Eventos',
   },
-  {
-    path: '/total-sales',
-    icon: <FaChartBar />,
-    title: 'Total de Vendas',
-  },
+  // {
+  //   path: '/total-sales',
+  //   icon: <FaChartBar />,
+  //   title: 'Total de Vendas',
+  // },
 ]

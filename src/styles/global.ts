@@ -14,7 +14,7 @@ root {
 * {
   margin: 0;
   box-sizing: border-box !important;
-  font-family: 'Inter';
+  font-family: 'Roboto';
 }
 
 h1,

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
+import { Button } from '@/components/atoms/Button'
 
 export const Portal = styled(Dialog.Portal)`
   @media (max-width: 769px) {
@@ -18,7 +19,8 @@ export const Overlay = styled(Dialog.Overlay)`
 `
 
 export const Content = styled(Dialog.Content)`
-  max-width: 37.5rem;
+  max-width: 60rem;
+  height: 54rem;
   font-family: Poppins;
   display: flex;
   align-items: center;
@@ -49,6 +51,7 @@ export const CloseButton = styled(Dialog.Close)`
   line-height: 0;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.gray_500};
+  z-index: 999;
 `
 export const StudentsSection = styled.div`
   margin-top: 1.5rem;
@@ -118,4 +121,52 @@ export const Title = styled(Dialog.Title)``
 
 export const MainContainer = styled.div`
   width: 100%;
+  margin-top: 1.5rem;
+  max-height: 620px;
+  overflow-y: auto;
+  padding: 0.5rem;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+`
+
+export const FormNewStudentContainer = styled.div`
+  margin-top: 1.5rem;
+`
+
+export const WrapperInput = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+`
+
+export const WrapperButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+`
+
+export const HeadingContainer = styled.div`
+  padding: 0 0 1rem 0;
+`
+
+export const BackButton = styled(Button)`
+  border: 1px solid ${({ theme }) => theme.colors.primary};
 `

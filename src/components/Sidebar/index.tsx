@@ -4,7 +4,6 @@ import { SidebarButton } from '../SidebarButton'
 import { IoLocationSharp } from 'react-icons/io5'
 import { Text } from '../atoms/Text'
 import { usePathname } from 'next/navigation'
-import { Button } from '../atoms/Button'
 import { IoExitOutline } from 'react-icons/io5'
 
 export function Sidebar() {

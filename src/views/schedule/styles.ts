@@ -38,3 +38,8 @@ export const Products = styled.div`
   border-radius: 10px;
   border: 1px dashed #cad2d9;
 `
+export const ClassesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`

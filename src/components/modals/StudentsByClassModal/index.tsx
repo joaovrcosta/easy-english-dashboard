@@ -4,6 +4,7 @@ import { IoMdClose } from 'react-icons/io'
 import { Text } from '@/components/atoms/Text'
 import { FaEye } from 'react-icons/fa'
 import { GoPlusCircle } from 'react-icons/go'
+import { IoRemoveCircleOutline } from 'react-icons/io5'
 
 export function StudentsByClassModal() {
   return (
@@ -33,12 +34,15 @@ export function StudentsByClassModal() {
                   gap: '0.5rem',
                 }}
               >
-                <S.PinStudentButton>
-                  <GoPlusCircle size={24} />
-                </S.PinStudentButton>
                 <S.SeeStudentButton>
                   <FaEye size={24} />
                 </S.SeeStudentButton>
+                <S.PinStudentButton>
+                  <GoPlusCircle size={24} />
+                </S.PinStudentButton>
+                <S.PinStudentButton>
+                  <IoRemoveCircleOutline size={26} />
+                </S.PinStudentButton>
               </div>
             </S.StudentBox>
             <S.StudentBox>
@@ -56,12 +60,15 @@ export function StudentsByClassModal() {
                   gap: '0.5rem',
                 }}
               >
-                <S.PinStudentButton>
-                  <GoPlusCircle size={24} />
-                </S.PinStudentButton>
                 <S.SeeStudentButton>
                   <FaEye size={24} />
                 </S.SeeStudentButton>
+                <S.PinStudentButton>
+                  <GoPlusCircle size={24} />
+                </S.PinStudentButton>
+                <S.PinStudentButton>
+                  <IoRemoveCircleOutline size={26} />
+                </S.PinStudentButton>
               </div>
             </S.StudentBox>
             <S.StudentBox>
@@ -79,12 +86,15 @@ export function StudentsByClassModal() {
                   gap: '0.5rem',
                 }}
               >
-                <S.PinStudentButton>
-                  <GoPlusCircle size={24} />
-                </S.PinStudentButton>
                 <S.SeeStudentButton>
                   <FaEye size={24} />
                 </S.SeeStudentButton>
+                <S.PinStudentButton>
+                  <GoPlusCircle size={24} />
+                </S.PinStudentButton>
+                <S.PinStudentButton>
+                  <IoRemoveCircleOutline size={26} />
+                </S.PinStudentButton>
               </div>
             </S.StudentBox>
           </S.StudentsSection>

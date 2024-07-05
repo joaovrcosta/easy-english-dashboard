@@ -8,7 +8,6 @@ interface ILayout {
 export function LandingLayout({ children }: ILayout) {
   return (
     <>
-      <Header />
       <Container>{children}</Container>
     </>
   )

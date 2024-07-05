@@ -10,7 +10,7 @@ export const defaultTheme = {
     green_500: 'rgba(75, 181, 67, 1)',
     danger_500: 'rgba(234, 84, 98, 1)',
     white: 'rgba(255, 255, 255, 255)',
-    black: 'rgba(0, 0, 0, 1)',
+    black: 'rgba(65, 65, 67, 1)',
     gray_100: 'rgba(237, 237, 237, 1)',
     gray_200: 'rgba(204, 204, 204, 1)',
     gray_300: 'rgba(179, 179, 179, 1)',

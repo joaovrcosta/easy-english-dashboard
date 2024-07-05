@@ -7,9 +7,12 @@ import GenericTable from '@/components/Table'
 import OrderDetailsComponent from '@/components/OrderDetails'
 import { useState } from 'react'
 import { GoPlusCircle } from 'react-icons/go'
+import * as Dialog from '@radix-ui/react-dialog'
+import { NewStudentModal } from '@/components/modals/NewStudentModal'
 
 export default function StudentsPage() {
   const [activeDetailsIndex, setActiveDetailsIndex] = useState(null)
+  const [isNewStudentModalOpen, setNewStudentModalOpen] = useState(false)
 
   const handleToggleDetails = (index: any) => {
     setActiveDetailsIndex(activeDetailsIndex === index ? null : index)
@@ -76,15 +79,23 @@ export default function StudentsPage() {
             <Button>Cancelado</Button>
           </div>
           <div>
-            <Button
-              backgroundColor="primary"
-              color="white"
-              rounding="rounded"
-              variant="lg"
+            <Dialog.Root
+              open={isNewStudentModalOpen}
+              onOpenChange={setNewStudentModalOpen}
             >
-              <FiPlus size={24} />
-              Novo cliente
-            </Button>
+              <Dialog.Trigger asChild>
+                <Button
+                  backgroundColor="primary"
+                  color="white"
+                  rounding="rounded"
+                  variant="lg"
+                >
+                  <FiPlus size={24} />
+                  Novo aluno
+                </Button>
+              </Dialog.Trigger>
+              <NewStudentModal />
+            </Dialog.Root>
           </div>
         </S.FiltersContainer>
       </S.SearchingContainer>
