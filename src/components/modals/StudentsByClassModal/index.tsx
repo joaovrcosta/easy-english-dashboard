@@ -5,6 +5,7 @@ import { Text } from '@/components/atoms/Text'
 import { FaEye } from 'react-icons/fa'
 import { GoPlusCircle } from 'react-icons/go'
 import { IoRemoveCircleOutline } from 'react-icons/io5'
+import Link from 'next/link'
 
 export function StudentsByClassModal() {
   return (
@@ -21,9 +22,16 @@ export function StudentsByClassModal() {
           <S.StudentsSection>
             <S.StudentBox>
               <div>
-                <Text color="primary" weight="semibold">
+                <Link
+                  href="/students/student/128"
+                  style={{
+                    textDecoration: 'none',
+                    color: 'rgb(237, 25, 65)',
+                    fontWeight: '600',
+                  }}
+                >
                   João Victor
-                </Text>
+                </Link>
                 <Text>RA: 4853</Text>
               </div>
               <div
@@ -47,9 +55,16 @@ export function StudentsByClassModal() {
             </S.StudentBox>
             <S.StudentBox>
               <div>
-                <Text color="primary" weight="semibold">
+                <Link
+                  href="/students/student/128"
+                  style={{
+                    textDecoration: 'none',
+                    color: 'rgb(237, 25, 65)',
+                    fontWeight: '600',
+                  }}
+                >
                   João Victor
-                </Text>
+                </Link>
                 <Text>RA: 4853</Text>
               </div>
               <div
@@ -73,9 +88,16 @@ export function StudentsByClassModal() {
             </S.StudentBox>
             <S.StudentBox>
               <div>
-                <Text color="primary" weight="semibold">
+                <Link
+                  href="/students/student/128"
+                  style={{
+                    textDecoration: 'none',
+                    color: 'rgb(237, 25, 65)',
+                    fontWeight: '600',
+                  }}
+                >
                   João Victor
-                </Text>
+                </Link>
                 <Text>RA: 4853</Text>
               </div>
               <div

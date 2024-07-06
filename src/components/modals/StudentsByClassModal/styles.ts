@@ -12,7 +12,7 @@ export const Overlay = styled(Dialog.Overlay)`
   width: 100%;
   height: 100vh;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 999999;
 `
@@ -68,6 +68,10 @@ export const StudentBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  link {
+    text-decoration: none;
+  }
 `
 
 export const SeeStudentButton = styled.button`

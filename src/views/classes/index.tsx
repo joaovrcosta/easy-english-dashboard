@@ -34,11 +34,11 @@ export default function ClassesPage() {
 
   const data = [
     {
-      acronym: 'ENG101',
-      name: 'Inglês',
+      acronym: '1 SEM2024',
+      name: 'SYM STARTER',
       price: 'R$35,00',
       status: 'Em dia',
-      category: 'Língua',
+      category: 'Basic',
       language: 'Inglês',
       average: 7,
       typeOfAssessment: 'Número',
@@ -66,12 +66,140 @@ export default function ClassesPage() {
       ),
     },
     {
-      acronym: 'MATH202',
-      name: 'Matemática',
+      acronym: '1 SEM2024',
+      name: 'SYM 3',
+      price: 'R$35,00',
+      status: 'Atrasado',
+      category: 'Intermediate',
+      language: 'Inglês',
+      average: 8,
+      typeOfAssessment: 'Nota',
+      students: (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            cursor: 'pointer',
+          }}
+        >
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
+        </div>
+      ),
+    },
+    {
+      acronym: '1 SEM2024',
+      name: 'KEEP TALKING',
+      price: 'R$35,00',
+      status: 'Atrasado',
+      category: 'Advanced',
+      language: 'Inglês',
+      average: 8,
+      typeOfAssessment: 'Nota',
+      students: (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            cursor: 'pointer',
+          }}
+        >
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
+        </div>
+      ),
+    },
+    {
+      acronym: '1 SEM2024',
+      name: 'SYM 1B',
       price: 'R$35,00',
       status: 'Atrasado',
       category: 'Ciências Exatas',
-      language: 'Português',
+      language: 'Inglês',
+      average: 8,
+      typeOfAssessment: 'Nota',
+      students: (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            cursor: 'pointer',
+          }}
+        >
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
+        </div>
+      ),
+    },
+    {
+      acronym: '1 SEM2024',
+      name: 'SYM 2 SABADO',
+      price: 'R$35,00',
+      status: 'Atrasado',
+      category: 'Ciências Exatas',
+      language: 'Inglês',
+      average: 8,
+      typeOfAssessment: 'Nota',
+      students: (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            cursor: 'pointer',
+          }}
+        >
+          <Dialog.Root
+            open={isStudentsModalOpen}
+            onOpenChange={setStudentsModalOpen}
+          >
+            <Dialog.Trigger asChild>
+              <S.SeeMoreButton>
+                <FaEye size={24} />
+              </S.SeeMoreButton>
+            </Dialog.Trigger>
+            <StudentsByClassModal />
+          </Dialog.Root>
+        </div>
+      ),
+    },
+    {
+      acronym: '1 SEM2024',
+      name: 'SYM 2',
+      price: 'R$35,00',
+      status: 'Atrasado',
+      category: 'Ciências Exatas',
+      language: 'Inglês',
       average: 8,
       typeOfAssessment: 'Nota',
       students: (

@@ -1,5 +1,9 @@
 import styled from 'styled-components'
-import { ColorThemeType, TextFontSize, WeightFont } from '@/core/constants/theme'
+import {
+  ColorThemeType,
+  TextFontSize,
+  WeightFont,
+} from '@/core/constants/theme'
 
 interface TextProps {
   size?: TextFontSize
@@ -17,5 +21,5 @@ export const Text = styled.p<TextProps>`
   `}
   margin-bottom: 0;
   line-height: normal;
-  transition: 0.3s ease all;
+  /* transition: 0.3s ease all; */
 `
